@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal Site for Dmitriy Khazan - Web Developer" />
+    <meta name="author" content="Dmitriy Khazan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dmitriy Khazan</title>
+
+    <!--Bootstrap links, CSS, JQUERY, JavaScript-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/images/lion.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="jumbotron text-center animate-bottom noOverflow relativeP">
+        <div class="logo">
+            <h1 class="myName">DMITRIY KHAZAN</h1>
+            <p>Full Stack Web Developer</p>
+        </div>
+    </header>
+
+    <nav class="container padding5" id="navigator">
+        <ul class="nav nav-pills nav-justified padding-zero">
+            <li class="nav-item" id="navWho">
+                <a class="nav-link hover-light">Who I Am</a>
+            </li>
+            <li class="nav-item" id="navPortfolio">
+                <a class="nav-link hover-light">Portfolio</a>
+            </li>
+            <li class="nav-item" id="navResume">
+                <a class="nav-link hover-light">Resume</a>
+            </li>
+            <li class="nav-item" id="navContact">
+                <a class="nav-link hover-light">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="modal fade" id="resumeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="assets/images/Web Developer Resume.pdf" target="_blank">Download PDF Resume</a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <div class="col-sm-12">
+                            <div id="profile_image">
+                                <img src="assets/images/profilepicsmall.jpg" alt="Profile Pic" height="200" />
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Dmitriy Khazan</h3>
+                                <p class="text-muted mb-0">Dallas, TX</p>
+                            </div>
+                            <div class="mtb-10">
+                                <em>
+                                    Full-stack web developer who has overcome many challenges before working towards a
+                                    career in Web Development. Adept at learning new technologies quickly.
+                                    Multidisciplinary Full Stack Web Developer and Data Analyst with a passion for
+                                    condensing large data in to a simple to understand story and building websites from
+                                    mockup to rollout. Adept at working independently as well as collaborating with
+                                    teams across multiple functions to break down concepts in layman terms.
+                                </em>
+                            </div>
+                            <hr class="mtb-10" />
+                            <div>
+                                <a href="https://github.com/Dima757" target="_blank">GitHub</a>
+                                <a href="http://www.linkedin.com/in/dmitriykhazan" target="_blank">LinkedIn</a>
+                                <a id="resumeEmail" href="mailto:Dima7735@gmail.com">Email</a>
+                            </div>
+                            <hr class="mtb-10" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div>
+                                <h4>EDUCATION</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-education"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h5>Southern Methodist University</h5>
+                                    <p><em>Full Stack Web Development</em></p>
+                                    <p>
+                                        - An intensive 24-week long boot camp dedicated to
+                                        designing and building web applications. Skills learned
+                                        consisted of HTML5, CSS3, Javascript, JQuery, Bootstrap,
+                                        Firebase, Node Js, MySQL, MongoDB, Express, Handlebars, &
+                                        React Js.
+                                    </p>
+                                    <p class="text-muted">August 2018 - February 2019</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-education"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h5>Collin College</h5>
+                                    <p><em>Associate of Science, Computer Science</em></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>APPLICATIONS</h4>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h5>Web Dev Point</h5>
+                                    <p>
+                                        - Full Stack Web Application teaching folks with no
+                                        experience how to code and provides a road map to becoming
+                                        a full stack developer
+                                    </p>
+                                    <p>
+                                        - Developed a responsive CRUD application that includes
+                                        webpages, user authentication throught JWT and a forum
+                                    </p>
+                                    <p>
+                                        - React Js, MongoDB, Node/Express, Passport Js, Bootstrap,
+                                        and JWT token authentication
+                                    </p>
+                                    <p>
+                                        <a href="https://web-devpoint.herokuapp.com/home"
+                                            target="_blank">https://web-devpoint.herokuapp.com/home</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h5>Passion Planner</h5>
+                                    <p>
+                                        - Daily planner website consisting of several widgets such as weather,
+                                        motivational quote, and to-do list.
+
+                                    </p>
+                                    <p>- Group Project</p>
+                                    <p>- Built with HTML, CSS, JQuery, Bootstrap, Firebase</p>
+                                    <p>
+                                        <a href="https://paulacoroneos.github.io/PassionPlanner/"
+                                            target="_blank">https://paulacoroneos.github.io/PassionPlanner/</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h5>Trivia Game</h5>
+                                    <p>- Timed multiple choice game that displays if the user is correct or wrong along
+                                        with pictures and a final evaluation page.
+                                    </p>
+                                    <p>- Solo Developer</p>
+                                    <p>- Built with Bootstrap, Javascript, JQuery.
+                                        .</p>
+                                    <p>
+                                        <a href="https://dima757.github.io/TriviaGame/"
+                                            target="_blank">https://dima757.github.io/TriviaGame/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>RELEVANT EXPERIENCE</h4>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-briefcase"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <h5>SMU Full Stack Development</h5>
+                                    <p>
+                                        - Created projects using tools necessary to create full
+                                        stack applications
+                                    </p>
+                                    <p>
+                                        - Participated in group projects, was in charge of
+                                        designing, implementing, and deploying applications
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>ADDITIONAL WORK EXPERIENCE</h4>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-briefcase"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <p>Campisi's Restaurant</p>
+                                    <p class="text-muted">August 2017 - Current</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-briefcase"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <p>
+                                        Koldaire HVAC
+                                    </p>
+                                    <p class="text-muted">Jan 2017 - August 2017</p>
+                                    <p class="toggle" data-toggle="collapse" data-target="#iei">
+                                        View Description
+                                    </p>
+                                    <div id="iei" class="collapse">
+                                        <p>
+                                            - Responsible for Invoice Accounting and Data Entry
+                                        </p>
+                                        <p>
+                                            - Dispatching Appointments to Technicians
+                                        </p>
+                                        <p> - Website management</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1 text-center text-muted">
+                                    <span class="glyphicon glyphicon-briefcase"></span>
+                                </div>
+                                <div class="col-xs-11">
+                                    <p>Telecom Gateway</p>
+                                    <p class="text-muted">August 2016 - December 2016</p>
+                                    <p class="toggle" data-toggle="collapse" data-target="#gator">
+                                        View Description
+                                    </p>
+                                    <div id="gator" class="collapse">
+                                        <p>- Responsible for data entry and maintenance of route logs</p>
+                                        <p>- Maintained and Updated Databases</p>
+                                        <p>- Strong utilization of software and files</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="who">
+        <div class="row">
+            <div class="col-sm-5 relativeP row-height noOverflow paddingRight">
+                <div class="relativeP row-height slide_in" id="black">
+                    <div class="slide_in_Text">
+                        <p>
+                            Full Stack Web Developer with a passion for creating and design.
+                            Educated in Information Systems Security with knowledge in web
+                            development technologies such as HTML, CSS, Bootstrap, Node,
+                            MongoDB, Express, JavaScript and React.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 row-height" id="whoMobile">
+                <div class="row">
+                    <div class="col-sm-7 paddingRight noOverflow">
+                        <div class="relativeP row-heightHalf slide_in" id="highLine">
+                            <div class="slide_in_Text">
+                                <p>
+                                    Adept at working independently as well as collaborating with teams across multiple
+                                    functions to break down concepts in layman terms. Bring experience obtained through
+                                    a cross-functional organization to streamline data analysis, reporting, and
+                                    auditing. Prepared to excel in solving complex problems. Fluent in English and
+                                    Russian.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 paddingZero noOverflow">
+                        <div class="relativeP row-heightHalf slide_in" id="vines">
+                            <!-- <div class="slide_in_Text">
+								<p>Associates of Science Degree
+								</p>
+							</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 paddingTopRight noOverflow">
+                        <div class="relativeP row-heightHalf slide_in" id="profilePic">
+                            <!-- <div class="slide_in_Text">
+								<p>Associates Degree
+								</p>
+							</div> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-8 paddingTop noOverflow">
+                        <div class="relativeP row-heightHalf slide_in" id="outside">
+                            <div class="slide_in_Text">
+                                <p>
+                                    Associates Degree
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="portfolio">
+        <div class="row" id="portBackground">
+            <img id="portBanner" src="assets/images/portfolioHeader.png" />
+        </div>
+        <div class="row mb-80">
+            <div class="col-sm-6">
+                <img src="assets/images/webdevpoint.png" width="90%" />
+            </div>
+            <div class="col-sm-6">
+                <h4 class="mt-60">Web Dev Point</h4>
+                <p>
+                    A fully functioning website with a forum built using the MERN stack
+                    with JWT authentication. Technologies used to create this app
+                    include React, Redux, Node, Express, MongoDB, Bootstrap, and
+                    Passport JS for authentication.
+                </p>
+                <a href="https://web-devpoint.herokuapp.com/home" class="btn btn-default" target="_blank">Visit the
+                    Site</a>
+            </div>
+        </div>
+        <div class="row mb-80">
+            <div class="col-sm-6 text-right">
+                <h4 class="mt-60">Passion Planner</h4>
+                <p>
+                    Daily planner website consisting of several widgets such as weather, motivational quote, and to-do
+                    list.
+
+
+                </p>
+                <a href="https://paulacoroneos.github.io/PassionPlanner/" class="btn btn-default" target="_blank">Visit
+                    the Site</a>
+            </div>
+            <div class="col-sm-6">
+                <img src="assets/images/PassionPlanner.jpg" width="90%" />
+            </div>
+        </div>
+        <div class="row mb-80">
+            <div class="col-sm-6">
+                <img src="assets/images/Crystal.jpg" width="90%" />
+            </div>
+            <div class="col-sm-6">
+                <h4 class="mt-60">Crystals Collector</h4>
+                <p>
+                    A fun and interactive game for made for web browsers.
+                </p>
+                <a href="https://dima757.github.io/unit-4-game/" class="btn btn-default" target="_blank">Visit the
+                    Site</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-center" id="footer">
+        <div class="row">
+            <div class="col-sm-4" id="contact">
+                <p>Contact</p>
+                <hr />
+                <div id="socialLinks">
+                    <a id="resumeEmail" href="mailto:Dima7735@gmail.com"><span
+                            class="glyphicon glyphicon-envelope"></span></a>
+                    <a href="https://github.com/Dima757" target="_blank"><img id="git" src="assets/images/github.png"
+                            alt="github" /></a>
+                    <a href="http://www.linkedin.com/in/dmitriykhazan" target="_blank"><img id="link"
+                            src="assets/images/linkedin.png" alt="linked-in" /></a>
+                </div>
+            </div>
+            <div class="col-sm-4" id="projectListOne"></div>
+            <div class="col-sm-4" id="projectListTwo"></div>
+        </div>
+        <div class="row text-center margin-top">
+            <div class="col-sm-12" id="copyright">
+                Dmitriy Khazan &#169; 2019
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
